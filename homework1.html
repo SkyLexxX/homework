@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Svjatoslav Yaremko</title>
+</head>
+<body>
+  <script>
+var spc = " ";
+var num = "#";
+var lines = +prompt("число ліній", 8);
+var row = +prompt("число символів в рядку включаючи ' ' ",2);
+var result = "";
+for(var i = 0; i < lines; i++ ) {
+   for(var n = 0; n < row; n++) {
+       if (row%2==0) {
+           if (lines%2 == 0) {
+               result += num;
+           } else {
+               result += spc;
+                }
+       } else{ if(line % 2 == 0) {
+                   result+=spc;
+               }else {
+                   result+=num;
+               }
+         }
+   }
+console.log(result);
+
+}
+
+  </script>
+</body>
+</html>

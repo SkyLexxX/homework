@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Svjatoslav Yaremko</title>
+</head>
+<body>
+  <script>
+  var result = "\n";
+for (var row = 1; row <= 8; row++) {
+  for (var cell = 1; cell <= 8; cell++) {
+    result += (row % 2 == cell % 2) ? "#" : " ";
+  }
+  result += "\n";
+}
+console.log(result);
+
+  </script>
+</body>
+</html>

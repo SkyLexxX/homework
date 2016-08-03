@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Svjatoslav Yaremko</title>
+</head>
+<body>
+  <script>
+  var num = 1;
+  for ( ; num < 101; num++ ) {
+      if ( num % 5 === 0 && num % 3 === 0 ){
+         document.write( num, " = ФІЗБАЗ <br />" )
+      }else if ( num%5 === 0 ){
+         document.write( num, " = БАЗ <br />" );
+      }else if ( num%3 === 0 ){
+         document.write( num, " = ФІЗ <br/ >" );
+      }else{
+         document.write( num, "<br/ >" );
+      }
+  }
+  </script>
+</body>
+</html>
