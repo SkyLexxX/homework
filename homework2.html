@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="utf-8">
- <title>Svjatoslav Yaremko</title>
+<meta charset="utf-8">
+<title>Svjatoslav Yaremko</title>
 </head>
 <body>
-  <script>
-  var num = 1;
-  for ( ; num < 101; num++ ) {
-      if ( num % 5 === 0 && num % 3 === 0 ){
-         document.write( num, " = ФІЗБАЗ <br />" )
-      }else if ( num%5 === 0 ){
-         document.write( num, " = БАЗ <br />" );
-      }else if ( num%3 === 0 ){
-         document.write( num, " = ФІЗ <br/ >" );
-      }else{
-         document.write( num, "<br/ >" );
-      }
-  }
-  </script>
+ <script>
+ function isEven(n) {
+ if (n == 0)
+   return true;
+ else if (n == 1)
+   return false;
+ else if (n < 0)
+   return isEven(-n);
+ else
+   return isEven(n - 2);
+}
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));
+ </script>
 </body>
 </html>
