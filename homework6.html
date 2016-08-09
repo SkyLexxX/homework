@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Svjatoslav Yaremko</title>
+</head>
+<body>
+  <script>
+
+   var arr = [3, 7, 1, 5];
+   function сума(arr) {
+     var arrLen = arr.length,
+         result = 0;
+     for (var i = 0; i < arrLen; i++) {
+       result += arr[i];
+     }
+     return result;
+   }
+   function сер(arr) {
+     var arrLen = arr.length,
+         result = 0;
+     for (var i = 0; i < arrLen; i++) {
+       result += arr[i];
+     }
+     var division = result / arrLen;
+     return division;
+   }
+   var fсума = сума(arr),
+       fсер = сер(arr);
+
+   console.log(fсума, fсер);
+   document.write("fсума result: " + fсума + " ");
+   document.write("fсер result: " + fсер);
+
+   </script>
+</body>
+</html>
